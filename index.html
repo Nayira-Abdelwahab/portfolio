@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nayira Abdelwahab — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating persistent name watermark -->
+  <div class="name-watermark" aria-hidden="true">Nayira Abdelwahab</div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <div class="brand">
+        <a href="#home" class="brand-link">
+          <span class="brand-name">Nayira <span class="accent">Abdelwahab</span></span>
+          <span class="brand-role">Computer Science Student</span>
+        </a>
+      </div>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / LANDING -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-left" data-aos="fade-right">
+        <h1 class="hero-title">
+          <span id="typed-name"></span>
+        </h1>
+        <p class="hero-sub">Passionate about programming, data & modern systems — C++, C#, Java, OOP, SQL & problem solving.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See Projects</a>
+          <a class="btn btn-outline" href="#contact">Get in touch</a>
+        </div>
+
+        <ul class="hero-contact">
+          <li><i class="fa fa-envelope"></i> <a href="mailto:nayiraabdelwahab@gmail.com">nayiraabdelwahab@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i> <a href="tel:+201061966142">+20 106 196 6142</a></li>
+        </ul>
+
+        <div class="socials">
+          <a href="https://github.com/Nayira-Abdelwahab" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right" data-aos="fade-left">
+        <div class="profile-card">
+          <div class="avatar">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.6" fill="#ffe9f0"></circle>
+              <path d="M4 20c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#ffd6ea" stroke-width="1.2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="meta">
+            <h3>Nayira <span class="accent">Abdelwahab</span></h3>
+            <p class="muted">Computer Science Student</p>
+            <p class="small">Took Huawei courses in Big Data & AI • Trainee at Rwad Masr Digital (Full Stack .NET) • Learning Java</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a motivated Computer Science student who loves building digital systems and solving complex problems.
+        I have practical experience in OOP, algorithms, and database design, and I worked on a project named <strong>Digital System</strong>.
+        I completed professional trainings with Huawei in Big Data & Artificial Intelligence and participated in the Rwad Masr Digital Full Stack .NET program.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section light" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="50"><h4>C++</h4><p>OOP, Algorithms, Competitive programming</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="100"><h4>C#</h4><p>App dev, .NET, OOP</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="150"><h4>SQL</h4><p>Relational DB design & queries</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="200"><h4>Problem Solving</h4><p>DS & Algorithms</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="250"><h4>English</h4><p>Reading & Writing (professional)</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="300"><h4>Data & AI</h4><p>Big Data concepts, ML fundamentals</p></li>
+        <li class="skill-card" data-aos="zoom-in" data-aos-delay="350"><h4>Java</h4><p>Learning Java • OOP, Core Java basics</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Courses & Trainings</h2>
+      <div class="cards-grid">
+        <article class="card" data-aos="fade-right">
+          <h3>Huawei — Big Data</h3>
+          <p>Fundamentals of Big Data, processing pipelines and real-world applications.</p>
+          <figure style="margin-top:12px">
+            <img src="images/bigdata.png" alt="Big Data Certificate" style="max-width:160px;border-radius:8px;border:1px solid rgba(12,18,40,0.06)">
+            <figcaption class="small muted" style="margin-top:6px">Big Data Certificate</figcaption>
+          </figure>
+        </article>
+
+        <article class="card" data-aos="fade-left">
+          <h3>Huawei — Artificial Intelligence</h3>
+          <p>AI concepts, model basics and practical use cases.</p>
+          <figure style="margin-top:12px">
+            <img src="images/ai.png" alt="AI Certificate" style="max-width:160px;border-radius:8px;border:1px solid rgba(12,18,40,0.06)">
+            <figcaption class="small muted" style="margin-top:6px">AI Certificate</figcaption>
+          </figure>
+        </article>
+
+        <article class="card" data-aos="fade-up">
+          <h3>Rwad Masr Digital — Full Stack .NET</h3>
+          <p>Full Stack .NET training — practical projects and industry-focused skills.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section light" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project" data-aos="flip-left">
+          <h4>Digital System</h4>
+          <p>A practical system project focused on digital workflows and automation (role: design & implementation).</p>
+          <a class="link" href="#" aria-label="Digital System details">Read more</a>
+        </article>
+
+        <article class="project" data-aos="flip-left" data-aos-delay="80">
+          <h4>Academic / Personal Projects</h4>
+          <p>Examples using C++, SQL and small .NET apps. (Add repo links when ready)</p>
+          <a class="link" href="#" aria-label="Projects repo">View repos</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card card" data-aos="fade-right">
+          <h4>Get in touch</h4>
+          <p class="muted">I’m open to internships, collaborations and freelance work.</p>
+          <ul class="contact-list">
+            <li><i class="fa fa-envelope"></i> <a href="mailto:nayiraabdelwahab@gmail.com">nayiraabdelwahab@gmail.com</a></li>
+            <li><i class="fa fa-phone"></i> <a href="tel:+201061966142">+20 106 196 6142</a></li>
+            <li><i class="fa fa-map-marker-alt"></i> Egypt (available for remote work)</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form card" data-aos="fade-left" novalidate>
+          <label><span>Name</span><input name="name" type="text" placeholder="Your name" required></label>
+          <label><span>Email</span><input name="email" type="email" placeholder="Your email" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" placeholder="Write your message..." required></textarea></label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+          <p id="form-feedback" class="muted small" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></button>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="container">
+      <p>© <span id="year"></span> Nayira Abdelwahab — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Animation for name
+    document.addEventListener("DOMContentLoaded", function() {
+      new Typed("#typed-name", {
+        strings: ["Nayira <span class='accent'>Abdelwahab</span>"],
+        typeSpeed: 80,
+        backSpeed: 0,
+        loop: false,
+        showCursor: false
+      });
+    });
+
+    // AOS init
+    AOS.init({ duration: 1000 });
+    
+    // Dynamic year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
