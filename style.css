@@ -1,0 +1,131 @@
+:root{
+  --primary:#ff6b6b;        /* vibrant coral */
+  --accent:#6a82fb;         /* violet/blue gradient */
+  --bg:#fffdfc;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --glass: rgba(255,255,255,0.6);
+  --radius:14px;
+  --max:1150px;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(180deg,#fffefc,#f6fbff 60%);
+  color:#071224;
+  -webkit-font-smoothing:antialiased;
+  scroll-behavior:smooth;
+  line-height:1.5;
+}
+
+/* Container */
+.container{width:90%;max-width:var(--max);margin:0 auto;padding:28px 0}
+
+/* Watermark (persistent name) */
+.name-watermark{
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  font-weight:800;
+  font-size:20px;
+  color:rgba(10,10,10,0.06);
+  letter-spacing:2px;
+  pointer-events:none;
+  z-index:2000;
+  transform: rotate(-10deg);
+  transition:opacity .4s ease, transform .4s ease;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;top:0;z-index:1200;
+  background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0.6));
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(9,18,34,0.04);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand-link{display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.brand-name{font-weight:800;font-size:15px}
+.brand-name .accent{color:var(--accent)}
+.brand-role{font-size:12px;color:var(--muted)}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:inherit;text-decoration:none;padding:8px 10px;border-radius:10px;font-weight:600}
+.nav-links a:hover{background:linear-gradient(90deg, rgba(106,130,251,0.08), rgba(255,107,107,0.06));transform:translateY(-2px);transition:all .25s}
+
+/* Mobile toggle */
+.nav-toggle{display:none;background:none;border:none;font-size:20px}
+
+/* HERO */
+.hero{position:relative;padding:60px 0 40px;overflow:visible}
+.hero-bg{position:absolute;right:-10%;top:-10%;width:520px;height:520px;background:linear-gradient(135deg,var(--accent),var(--primary));filter:blur(70px);opacity:0.14;border-radius:50%;transform:rotate(10deg);pointer-events:none}
+.hero-content{display:grid;grid-template-columns:1fr 380px;gap:30px;align-items:center}
+.hero-title{font-size:2.1rem;line-height:1.05;margin-bottom:10px;font-weight:800;letter-spacing:-0.5px}
+#typed-name{background: linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--muted);margin-bottom:18px}
+.hero-actions{display:flex;gap:12px;margin-bottom:14px}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700;transition:all .25s;box-shadow:0 6px 18px rgba(12,18,40,0.06)}
+.btn-primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:white;border:none;transform:translateY(0)}
+.btn-primary:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(106,130,251,0.12)}
+.btn-outline{background:transparent;border:1px solid rgba(9,18,34,0.06);color:inherit}
+.hero-contact{list-style:none;margin-top:12px}
+.hero-contact li{display:inline-block;margin-right:14px;color:var(--muted);font-weight:600}
+.socials{margin-top:12px}
+.socials a{display:inline-block;margin-right:10px;color:var(--muted);font-size:18px;transition:transform .18s}
+.socials a:hover{transform:translateY(-4px);color:var(--accent)}
+
+/* Profile card */
+.profile-card{display:flex;gap:14px;align-items:center;padding:16px;border-radius:16px;background:linear-gradient(180deg,#fff,#fff4);box-shadow:0 12px 40px rgba(12,18,40,0.06);border:1px solid rgba(12,18,40,0.03)}
+.profile-card .meta h3{margin:0}
+.profile-card .meta .muted{color:var(--muted);font-size:13px}
+.profile-card .meta .small{font-size:12px;color:var(--muted)}
+
+/* Sections */
+.section{padding:42px 0}
+.section h2{color:var(--accent);font-size:1.15rem;margin-bottom:14px}
+.section p{color:#0b1724}
+
+/* skills grid */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.skill-card{padding:16px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(12,18,40,0.03);box-shadow:0 8px 20px rgba(12,18,40,0.04)}
+.skill-card h4{margin-bottom:6px}
+.skill-card p{color:var(--muted);font-size:13px}
+
+/* cards grid & projects */
+.cards-grid, .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{padding:16px;border-radius:12px;background:var(--card);box-shadow:0 12px 30px rgba(12,18,40,0.04);border:1px solid rgba(12,18,40,0.03)}
+.project .link{display:inline-block;margin-top:8px;color:var(--accent);font-weight:700;text-decoration:none}
+.project .link:hover{text-decoration:underline;transform:translateX(6px)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-list{list-style:none;padding:10px 0}
+.contact-list li{margin-bottom:10px;font-weight:600;color:var(--muted)}
+.contact-list a{color:inherit;text-decoration:none}
+.contact-form label{display:block;margin-bottom:12px}
+.contact-form input,.contact-form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(12,18,40,0.06);font-size:14px}
+.form-actions{display:flex;gap:10px;align-items:center;margin-top:6px}
+
+/* back to top */
+.back-to-top{position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,var(--primary),var(--accent));color:white;border:none;padding:10px;border-radius:12px;display:none;box-shadow:0 12px 30px rgba(106,130,251,0.14);cursor:pointer}
+
+/* footer */
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(12,18,40,0.03)}
+
+/* small screens */
+@media (max-width:900px){
+  .hero-content{grid-template-columns:1fr 300px}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .nav-links{display:none;position:fixed;right:14px;top:72px;background:white;padding:14px;border-radius:10px;box-shadow:0 10px 30px rgba(2,6,23,0.08)}
+  .nav-toggle{display:block}
+  .hero-content{grid-template-columns:1fr}
+  .name-watermark{display:none} /* hide watermark on very small to avoid clutter */
+}
+
+
+
+
